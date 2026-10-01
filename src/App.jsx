@@ -12,7 +12,7 @@ import Footer from './components/Footer'
 
 import About from './pages/About'
 import ServicesPage from './pages/Services'
-import WhyUs from './pages/WhyUs'
+import WhyUs from './pages/WhyUS'
 import Careers from './pages/Careers'
 import Contact from './pages/Contact'
 import RequestQuote from './pages/RequestQuote'
