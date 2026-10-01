@@ -1,0 +1,1872 @@
+/* ============================================================
+   ABOUT PAGE
+   Crescendo Secure Solutions
+============================================================ */
+
+.about-page {
+  --about-navy: #061950;
+  --about-blue: #36549b;
+  --about-light: #f5f7ff;
+  --about-accent: #ccd8ff;
+  --about-border: #dbe2f1;
+  --about-text: #62718d;
+
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+
+  background: var(--about-light);
+  color: var(--about-navy);
+}
+
+
+/* ============================================================
+   COMMON
+============================================================ */
+
+.about-page *,
+.about-page *::before,
+.about-page *::after {
+  box-sizing: border-box;
+}
+
+.about-page img {
+  max-width: 100%;
+}
+
+.about-section {
+  width: 100%;
+
+  /*
+   * Reduced from 72px.
+   * Keeps the page compact.
+   */
+  padding: 48px 0;
+
+  background: var(--about-light);
+}
+
+.about-section-inner {
+  width: min(1320px, calc(100% - 100px));
+  margin: 0 auto;
+}
+
+.about-section-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  width: 100%;
+  margin-bottom: 38px;
+}
+
+.about-section-number {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--about-accent);
+
+  color: var(--about-blue);
+
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-section-label-text {
+  flex-shrink: 0;
+
+  color: var(--about-navy);
+
+  font-family: "Space Mono", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+.about-section-label-line {
+  height: 1px;
+  flex: 1;
+
+  background: var(--about-border);
+}
+
+
+/* ============================================================
+   01 — HERO
+============================================================ */
+
+.about-hero {
+  width: 100%;
+
+  /*
+   * Reduced hero height.
+   */
+  min-height: 440px;
+
+  display: flex;
+  align-items: center;
+
+  background: var(--about-navy);
+  color: #fff;
+}
+
+.about-hero-inner {
+  width: min(1320px, calc(100% - 100px));
+  margin: 0 auto;
+}
+
+.about-label {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  margin-bottom: 34px;
+
+  color: var(--about-accent);
+
+  font-family: "Space Mono", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+.about-label-number {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(204, 216, 255, 0.45);
+
+  font-size: 10px;
+}
+
+.about-hero-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(280px, 0.65fr);
+
+  align-items: end;
+
+  gap: 65px;
+}
+
+.about-kicker {
+  margin: 0 0 14px;
+
+  color: var(--about-accent);
+
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.about-hero h1 {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: #fff;
+
+  font-size: clamp(48px, 6vw, 76px);
+  font-weight: 800;
+
+  line-height: 0.98;
+  letter-spacing: -4px;
+}
+
+.about-hero-description {
+  max-width: 430px;
+
+  margin: 0;
+
+  color: #ccd8ff;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* ============================================================
+   02 — WHO WE ARE
+============================================================ */
+
+.about-who {
+  background: #fff;
+
+  /*
+   * IMPORTANT:
+   * Reduced bottom spacing so Team starts closer.
+   */
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+
+.about-who-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+
+  align-items: start;
+}
+
+.about-section-heading h2,
+.team-intro h2,
+.direction-header h2,
+.values-header h2 {
+  margin: 0;
+
+  color: var(--about-navy);
+
+  font-size: clamp(38px, 4vw, 56px);
+  font-weight: 800;
+
+  line-height: 1;
+  letter-spacing: -2.5px;
+}
+
+.about-copy {
+  max-width: 570px;
+
+  padding-top: 3px;
+}
+
+.about-copy p {
+  margin: 0 0 15px;
+
+  color: var(--about-text);
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ============================================================
+   03 — TEAM
+============================================================ */
+
+.about-team {
+  background: var(--about-light);
+
+  /*
+   * IMPORTANT:
+   * Reduced top spacing to remove the large gap after
+   * Who We Are.
+   */
+  padding-top: 28px;
+  padding-bottom: 48px;
+}
+
+.team-intro {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+
+  align-items: start;
+
+  margin-bottom: 34px;
+}
+
+.team-intro p {
+  max-width: 520px;
+
+  margin: 4px 0 0;
+
+  color: var(--about-text);
+
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+
+/* ============================================================
+   TEAM LIST
+============================================================ */
+
+.team-list {
+  width: 100%;
+
+  border-top: 1px solid var(--about-border);
+}
+
+
+/* ============================================================
+   NORMAL TEAM MEMBER
+   IMAGE LEFT / TEXT RIGHT
+============================================================ */
+
+.team-member {
+  display: grid;
+
+  grid-template-columns: 270px minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 50px;
+
+  width: 100%;
+
+  padding: 28px 0;
+
+  border-bottom: 1px solid var(--about-border);
+}
+
+
+/* ============================================================
+   REVERSE TEAM MEMBER
+   TEXT LEFT / IMAGE RIGHT
+============================================================ */
+
+.team-member-reverse {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) 270px;
+
+  align-items: center;
+
+  gap: 50px;
+
+  width: 100%;
+
+  padding: 28px 0;
+
+  border-bottom: 1px solid var(--about-border);
+}
+
+.team-member-reverse .team-photo-wrap {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.team-member-reverse .team-info {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+
+/* ============================================================
+   TEAM IMAGE
+============================================================ */
+/* =========================================================
+   TEAM PHOTO
+   Full original image visible — NO CROPPING
+========================================================= */
+
+.team-photo-wrap {
+  position: relative;
+
+  width: 270px;
+  height: 205px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e8edf8;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   TEAM IMAGE
+========================================================= */
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  /*
+    contain keeps the COMPLETE photograph visible.
+    Nothing is cropped from the original image.
+  */
+  object-fit: contain;
+
+  object-position: center center;
+
+  transition: transform 0.4s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.team-photo-wrap:hover .team-photo {
+  transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================
+   TEAM NUMBER
+============================================================ */
+
+.team-number {
+  position: absolute;
+
+  top: 12px;
+  left: 12px;
+
+  z-index: 2;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--about-navy);
+  color: #fff;
+
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+}
+
+
+/* ============================================================
+   TEAM TEXT
+============================================================ */
+
+.team-info {
+  width: 100%;
+  max-width: 620px;
+
+  min-width: 0;
+}
+
+.team-designation {
+  margin: 0 0 8px;
+
+  color: var(--about-blue);
+
+  font-family: "Space Mono", monospace;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+.team-info h3 {
+  margin: 0;
+
+  color: var(--about-navy);
+
+  font-size: 28px;
+  font-weight: 750;
+
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.team-line {
+  width: 42px;
+  height: 3px;
+
+  margin: 15px 0;
+
+  background: var(--about-accent);
+}
+
+.team-message {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: var(--about-text);
+
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+
+/* ============================================================
+   04 — VISION & MISSION
+============================================================ */
+
+.direction-section {
+  background: #fff;
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.direction-header {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+
+  align-items: end;
+
+  margin-bottom: 30px;
+}
+
+.direction-header p {
+  max-width: 480px;
+
+  margin: 0 0 4px;
+
+  color: var(--about-text);
+
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.direction-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+}
+
+.direction-card {
+  min-height: 255px;
+
+  padding: 27px;
+
+  border: 1px solid var(--about-border);
+}
+
+.vision-card {
+  background: #fff;
+}
+
+.mission-card {
+  background: var(--about-accent);
+
+  border-color: var(--about-accent);
+}
+
+.direction-number {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: var(--about-blue);
+
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+}
+
+.direction-label {
+  margin: 0 0 14px;
+
+  color: var(--about-blue);
+
+  font-family: "Space Mono", monospace;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.direction-card h3 {
+  margin: 0 0 18px;
+
+  color: var(--about-navy);
+
+  font-size: 30px;
+  font-weight: 800;
+
+  line-height: 1.05;
+  letter-spacing: -1.2px;
+}
+
+.direction-card > p:last-child {
+  max-width: 470px;
+
+  margin: 0;
+
+  color: var(--about-text);
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.mission-card > p:last-child {
+  color: #365078;
+}
+
+
+/* ============================================================
+   05 — VALUES
+============================================================ */
+
+.values-section {
+  background: var(--about-light);
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.values-header {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+
+  align-items: end;
+
+  margin-bottom: 30px;
+}
+
+.values-header h2 span {
+  color: var(--about-blue);
+}
+
+.values-header p {
+  max-width: 470px;
+
+  margin: 0 0 3px;
+
+  color: var(--about-text);
+
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.values-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+}
+
+.value-card {
+  min-height: 165px;
+
+  padding: 22px;
+
+  background: #fff;
+
+  border: 1px solid var(--about-border);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-3px);
+
+  border-color: var(--about-accent);
+}
+
+.value-number {
+  display: block;
+
+  margin-bottom: 24px;
+
+  color: var(--about-blue);
+
+  font-family: "Space Mono", monospace;
+
+  font-size: 10px;
+}
+
+.value-card h3 {
+  margin: 0 0 8px;
+
+  color: var(--about-navy);
+
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.value-card p {
+  max-width: 300px;
+
+  margin: 0;
+
+  color: var(--about-text);
+
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+
+/* ============================================================
+   06 — SAFER NEXT STEP
+============================================================ */
+
+.safer-section {
+  width: 100%;
+
+  padding: 58px 0;
+
+  background: var(--about-navy);
+
+  color: #fff;
+}
+
+.safer-inner {
+  width: min(1320px, calc(100% - 100px));
+
+  margin: 0 auto;
+}
+
+.safer-label {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 38px;
+
+  color: var(--about-accent);
+
+  font-family: "Space Mono", monospace;
+
+  font-size: 10px;
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+.safer-label span {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(204, 216, 255, 0.45);
+
+  font-size: 10px;
+}
+
+.safer-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.4fr)
+    minmax(280px, 0.6fr);
+
+  gap: 80px;
+
+  align-items: end;
+}
+
+.safer-content h2 {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: #fff;
+
+  font-size: clamp(42px, 5vw, 68px);
+
+  font-weight: 800;
+
+  line-height: 0.98;
+
+  letter-spacing: -3px;
+}
+
+.safer-content h2 span {
+  color: var(--about-accent);
+}
+
+.safer-right {
+  max-width: 390px;
+}
+
+.safer-right p {
+  margin: 0 0 22px;
+
+  color: #ccd8ff;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.safer-button {
+  min-height: 52px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 35px;
+
+  padding: 0 20px;
+
+  background: #fff;
+
+  color: var(--about-navy);
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.safer-button:hover {
+  background: var(--about-accent);
+
+  transform: translateY(-2px);
+}
+
+.safer-button span:last-child {
+  font-size: 19px;
+}
+
+
+/* ============================================================
+   DESKTOP — REMOVE UNWANTED SECTION HEIGHT / EMPTY SPACE
+============================================================ */
+
+@media (min-width: 1001px) {
+
+  /* WHO WE ARE */
+  .about-who {
+    height: auto !important;
+    min-height: 0 !important;
+
+    padding-top: 48px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .about-who .about-section-inner {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .about-who-grid {
+    height: auto !important;
+    min-height: 0 !important;
+
+    align-items: start !important;
+  }
+
+
+  /* OUR TEAM */
+  .about-team {
+    height: auto !important;
+    min-height: 0 !important;
+
+    padding-top: 28px !important;
+  }
+
+  .about-team .about-section-inner {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .team-intro {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .team-list {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 1000px) {
+
+  .about-section {
+    padding: 45px 0;
+  }
+
+  .about-section-inner,
+  .about-hero-inner,
+  .safer-inner {
+    width: min(100% - 60px, 900px);
+  }
+
+  /* HERO */
+
+  .about-hero {
+    min-height: 410px;
+  }
+
+  .about-hero-content {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  .about-hero-description {
+    max-width: 600px;
+  }
+
+
+  /* WHO */
+
+  .about-who {
+    padding-top: 45px;
+    padding-bottom: 24px;
+  }
+
+  .about-who-grid {
+    gap: 50px;
+  }
+
+
+  /* TEAM */
+
+  .about-team {
+    padding-top: 24px;
+    padding-bottom: 45px;
+  }
+
+  .team-intro {
+    gap: 50px;
+
+    margin-bottom: 28px;
+  }
+
+  .team-member {
+    grid-template-columns: 230px minmax(0, 1fr);
+
+    gap: 35px;
+
+    padding: 25px 0;
+  }
+
+  .team-member-reverse {
+    grid-template-columns: minmax(0, 1fr) 230px;
+
+    gap: 35px;
+
+    padding: 25px 0;
+  }
+
+  .team-member-reverse .team-photo-wrap {
+    grid-column: 2;
+  }
+
+  .team-member-reverse .team-info {
+    grid-column: 1;
+  }
+
+  .team-photo-wrap {
+    width: 230px;
+    height: 180px;
+  }
+
+
+  /* DIRECTION */
+
+  .direction-header {
+    gap: 50px;
+  }
+
+
+  /* VALUES */
+
+  .values-header {
+    gap: 50px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* CTA */
+
+  .safer-content {
+    gap: 50px;
+  }
+}
+
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 700px) {
+
+  .about-section {
+    padding: 40px 0;
+  }
+
+  .about-section-inner,
+  .about-hero-inner,
+  .safer-inner {
+    width: calc(100% - 32px);
+  }
+
+
+  /* ==========================================================
+     HERO
+  ========================================================== */
+
+  .about-hero {
+    min-height: 350px;
+
+    padding: 42px 0;
+  }
+
+  .about-label {
+    margin-bottom: 28px;
+  }
+
+  .about-label-number,
+  .about-section-number,
+  .safer-label span {
+    width: 34px;
+    height: 34px;
+
+    flex-basis: 34px;
+  }
+
+  .about-hero-content {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(40px, 12vw, 54px);
+
+    line-height: 0.98;
+
+    letter-spacing: -2.5px;
+  }
+
+  .about-hero-description {
+    max-width: 100%;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+  }
+
+
+  /* ==========================================================
+     SECTION LABEL
+  ========================================================== */
+
+  .about-section-label {
+    margin-bottom: 26px;
+  }
+
+  .about-section-label-text {
+    font-size: 9px;
+
+    letter-spacing: 1.2px;
+  }
+
+
+  /* ==========================================================
+     WHO WE ARE
+  ========================================================== */
+
+  .about-who {
+    /*
+     * Small bottom padding + Team small top padding
+     * removes the unwanted large gap.
+     */
+    padding-top: 38px;
+    padding-bottom: 20px;
+  }
+
+  .about-who-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .about-section-heading h2,
+  .team-intro h2,
+  .direction-header h2,
+  .values-header h2 {
+    font-size: 38px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+  }
+
+  .about-copy {
+    max-width: 100%;
+
+    padding-top: 0;
+  }
+
+  .about-copy p {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 12px;
+  }
+
+
+  /* ==========================================================
+     TEAM
+  ========================================================== */
+
+  .about-team {
+    /*
+     * IMPORTANT:
+     * Small top padding eliminates the blank area after
+     * Who We Are.
+     */
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .team-intro {
+    grid-template-columns: 1fr;
+
+    gap: 17px;
+
+    margin-bottom: 26px;
+  }
+
+  .team-intro p {
+    max-width: 100%;
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+  }
+
+  .team-list {
+    width: 100%;
+
+    border-top: 1px solid var(--about-border);
+  }
+
+
+  /* ==========================================================
+     TEAM — NORMAL
+     IMAGE LEFT / TEXT RIGHT
+  ========================================================== */
+
+  .team-member {
+    display: grid;
+
+    grid-template-columns: 105px minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 16px;
+
+    width: 100%;
+
+    padding: 21px 0;
+
+    border-bottom: 1px solid var(--about-border);
+  }
+
+  .team-member .team-photo-wrap {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 105px;
+    height: 115px;
+  }
+
+  .team-member .team-info {
+    grid-column: 2;
+    grid-row: 1;
+
+    width: 100%;
+
+    min-width: 0;
+  }
+
+
+  /* ==========================================================
+     TEAM — REVERSE
+     TEXT LEFT / IMAGE RIGHT
+  ========================================================== */
+
+  .team-member-reverse {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) 105px;
+
+    align-items: center;
+
+    gap: 16px;
+
+    width: 100%;
+
+    padding: 21px 0;
+
+    border-bottom: 1px solid var(--about-border);
+  }
+
+  .team-member-reverse .team-info {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 100%;
+
+    min-width: 0;
+
+    text-align: left;
+  }
+
+  .team-member-reverse .team-photo-wrap {
+    grid-column: 2;
+    grid-row: 1;
+
+    width: 105px;
+    height: 115px;
+  }
+
+
+  /* ==========================================================
+     TEAM IMAGE
+  ========================================================== */
+/* ==========================================================
+   TEAM IMAGE — MOBILE
+   COMPLETE IMAGE / NO CROPPING
+========================================================== */
+
+.team-photo-wrap {
+  position: relative;
+
+  width: 105px;
+  height: 115px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e8edf8;
+
+  flex-shrink: 0;
+}
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  /* IMPORTANT — NEVER USE COVER HERE */
+  object-fit: contain;
+  object-position: center center;
+
+  transition: none;
+}
+
+.team-photo-wrap:hover .team-photo {
+  transform: none;
+}
+  /* ==========================================================
+     TEAM NUMBER
+  ========================================================== */
+
+  .team-number {
+    top: 6px;
+    left: 6px;
+
+    width: 26px;
+    height: 26px;
+
+    font-size: 8px;
+  }
+
+
+  /* ==========================================================
+     TEAM TEXT
+  ========================================================== */
+
+  .team-info {
+    max-width: none;
+  }
+
+  .team-designation {
+    margin: 0 0 5px;
+
+    font-size: 7px;
+
+    line-height: 1.25;
+
+    letter-spacing: 0.9px;
+  }
+
+  .team-info h3 {
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.08;
+
+    letter-spacing: -0.5px;
+
+    overflow-wrap: anywhere;
+  }
+
+  .team-line {
+    width: 30px;
+    height: 2px;
+
+    margin: 9px 0;
+  }
+
+  .team-message {
+    max-width: 100%;
+
+    margin: 0;
+
+    font-size: 11px;
+
+    line-height: 1.45;
+
+    overflow-wrap: break-word;
+  }
+
+
+  /* ==========================================================
+     VISION / MISSION
+  ========================================================== */
+
+  .direction-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .direction-header {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin-bottom: 24px;
+  }
+
+  .direction-header p {
+    max-width: 100%;
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+  }
+
+  .direction-grid {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+  .direction-card {
+    min-height: auto;
+
+    padding: 22px;
+  }
+
+  .direction-number {
+    margin-bottom: 18px;
+  }
+
+  .direction-label {
+    margin-bottom: 12px;
+  }
+
+  .direction-card h3 {
+    margin-bottom: 14px;
+
+    font-size: 26px;
+
+    line-height: 1.05;
+  }
+
+  .direction-card > p:last-child {
+    font-size: 13px;
+
+    line-height: 1.55;
+  }
+
+
+  /* ==========================================================
+     VALUES
+  ========================================================== */
+
+  .values-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .values-header {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin-bottom: 24px;
+  }
+
+  .values-header p {
+    max-width: 100%;
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+
+    gap: 9px;
+  }
+
+  .value-card {
+    min-height: auto;
+
+    padding: 20px;
+  }
+
+  .value-number {
+    margin-bottom: 18px;
+  }
+
+  .value-card h3 {
+    font-size: 19px;
+  }
+
+  .value-card p {
+    max-width: 100%;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+  }
+
+
+  /* ==========================================================
+     SAFER NEXT STEP
+  ========================================================== */
+
+  .safer-section {
+    padding: 44px 0;
+  }
+
+  .safer-label {
+    margin-bottom: 30px;
+  }
+
+  .safer-content {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .safer-content h2 {
+    max-width: 100%;
+
+    font-size: 40px;
+
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+  }
+
+  .safer-right {
+    max-width: 100%;
+  }
+
+  .safer-right p {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+  }
+
+  .safer-button {
+    width: 100%;
+
+    min-height: 50px;
+  }
+}
+
+
+/* ============================================================
+   SMALL MOBILE
+============================================================ */
+
+@media (max-width: 420px) {
+
+  .about-section-inner,
+  .about-hero-inner,
+  .safer-inner {
+    width: calc(100% - 28px);
+  }
+
+
+  /* HERO */
+
+  .about-hero {
+    min-height: 335px;
+
+    padding: 38px 0;
+  }
+
+  .about-hero h1 {
+    font-size: 39px;
+
+    letter-spacing: -2px;
+  }
+
+
+  /* SECTION HEADINGS */
+
+  .about-section-heading h2,
+  .team-intro h2,
+  .direction-header h2,
+  .values-header h2 {
+    font-size: 34px;
+
+    letter-spacing: -1.8px;
+  }
+
+
+  /* ==========================================================
+     TEAM — SMALL MOBILE
+  ========================================================== */
+
+  .team-member {
+    grid-template-columns: 92px minmax(0, 1fr);
+
+    gap: 14px;
+
+    padding: 19px 0;
+  }
+
+  .team-member-reverse {
+    grid-template-columns: minmax(0, 1fr) 92px;
+
+    gap: 14px;
+
+    padding: 19px 0;
+  }
+
+  
+
+  .team-member .team-photo-wrap,
+  .team-member-reverse .team-photo-wrap {
+    width: 92px;
+    height: 105px;
+  }
+
+  .team-photo {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center center;
+  }
+
+
+
+  .team-number {
+    top: 5px;
+    left: 5px;
+
+    width: 24px;
+    height: 24px;
+
+    font-size: 7px;
+  }
+
+  .team-designation {
+    font-size: 6.5px;
+
+    letter-spacing: 0.7px;
+  }
+
+  .team-info h3 {
+    font-size: 16px;
+
+    line-height: 1.08;
+  }
+
+  .team-line {
+    width: 27px;
+
+    margin: 8px 0;
+  }
+
+  .team-message {
+    font-size: 10.5px;
+
+    line-height: 1.43;
+  }
+
+
+  /* DIRECTION */
+
+  .direction-card {
+    padding: 20px;
+  }
+
+  .direction-card h3 {
+    font-size: 24px;
+  }
+
+
+  /* VALUES */
+
+  .value-card {
+    padding: 18px;
+  }
+
+
+  /* CTA */
+
+  .safer-section {
+    padding: 38px 0;
+  }
+
+  .safer-content h2 {
+    font-size: 35px;
+  }
+}
+
+
+
+
+
+/* ============================================================
+   ABOUT PAGE — FIXED HEADER
+============================================================ */
+
+.about-page > .nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+
+  z-index: 1000;
+}
+
+/* Keep About content below the fixed header */
+.about-page > main {
+  padding-top: 60px;
+}
+
+
+/* ============================================================
+   MOBILE HEADER
+============================================================ */
+
+@media (max-width: 900px) {
+
+  .about-page > .nav {
+    height: 78px;
+  }
+
+  .about-page > main {
+    padding-top: 78px;
+  }
+
+  .about-page .mobile-menu {
+    position: fixed;
+    top: 78px;
+    left: 0;
+    right: 0;
+
+    z-index: 999;
+  }
+}
+
+
+
+/* ============================================================
+   ABOUT PAGE — FLOATING WHATSAPP
+============================================================ */
+
+.about-whatsapp-btn {
+  position: fixed;
+
+  right: 22px;
+  bottom: 22px;
+
+  z-index: 1100;
+
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #25d366;
+  color: #fff;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 8px 24px rgba(37, 211, 102, 0.30),
+    0 4px 12px rgba(6, 25, 80, 0.15);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.about-whatsapp-btn svg {
+  width: 31px;
+  height: 31px;
+
+  display: block;
+}
+
+.about-whatsapp-btn:hover {
+  background: #20bd5b;
+
+  color: #fff;
+
+  transform: translateY(-4px) scale(1.04);
+
+  box-shadow:
+    0 12px 30px rgba(37, 211, 102, 0.38),
+    0 5px 16px rgba(6, 25, 80, 0.18);
+}
+
+
+/* Pulse ring */
+
+.about-whatsapp-btn::before {
+  content: "";
+
+  position: absolute;
+
+  inset: -4px;
+
+  border: 2px solid rgba(37, 211, 102, 0.35);
+
+  border-radius: 50%;
+
+  animation: aboutWhatsappPulse 2.2s ease-out infinite;
+
+  pointer-events: none;
+}
+
+@keyframes aboutWhatsappPulse {
+
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+
+  70% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+
+}
+
+
+/* ============================================================
+   MOBILE WHATSAPP
+============================================================ */
+
+@media (max-width: 600px) {
+
+  .about-whatsapp-btn {
+    right: 15px;
+    bottom: 15px;
+
+    width: 50px;
+    height: 50px;
+  }
+
+  .about-whatsapp-btn svg {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+
+@media (max-width: 390px) {
+
+  .about-whatsapp-btn {
+    right: 13px;
+    bottom: 13px;
+
+    width: 47px;
+    height: 47px;
+  }
+
+  .about-whatsapp-btn svg {
+    width: 25px;
+    height: 25px;
+  }
+}

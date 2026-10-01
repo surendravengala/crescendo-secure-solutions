@@ -1,0 +1,1101 @@
+/* =========================================================
+   CRESCENDO SECURE SOLUTIONS
+   REQUEST A QUOTE
+   ========================================================= */
+
+.quote-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #ffffff;
+  color: #061950;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.quote-hero {
+  position: relative;
+
+  min-height: 560px;
+
+  margin-top: 118px;
+
+  display: flex;
+  align-items: center;
+
+  background: #061950;
+
+  overflow: hidden;
+}
+
+
+/* Decorative circle */
+
+.quote-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 620px;
+  height: 620px;
+
+  right: -300px;
+  top: -300px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(204, 216, 255, 0.11);
+
+  pointer-events: none;
+}
+
+
+/* Decorative circle */
+
+.quote-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  left: -300px;
+  bottom: -300px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(21, 189, 208, 0.12);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.quote-hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1180px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.2fr 0.8fr;
+
+  column-gap: 80px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   HERO LEFT
+   ========================================================= */
+
+.quote-hero-left {
+  max-width: 780px;
+}
+
+
+.quote-hero-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 48px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 2.4px;
+}
+
+
+.quote-hero-label span {
+  width: 38px;
+  height: 1px;
+
+  display: block;
+
+  background: #ccd8ff;
+}
+
+
+.quote-hero-left h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(60px, 6.5vw, 88px);
+
+  line-height: 0.97;
+
+  font-weight: 800;
+
+  letter-spacing: -3.5px;
+}
+
+
+.quote-hero-left h1::after {
+  content: "";
+
+  display: block;
+
+  width: 58px;
+  height: 4px;
+
+  margin-top: 30px;
+
+  background: #061950;
+}
+
+
+/* =========================================================
+   HERO RIGHT
+   ========================================================= */
+
+.quote-hero-right {
+  padding-top: 90px;
+}
+
+
+.quote-hero-right p {
+  max-width: 450px;
+
+  margin: 0;
+
+  color: #ccd8ff;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   QUOTE SECTION
+   ========================================================= */
+
+.quote-section {
+  width: 100%;
+
+  padding: 90px 0 110px;
+
+  background: #f7f9fd;
+}
+
+
+.quote-container {
+  width: min(1180px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.92fr 1.08fr;
+
+  gap: 80px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   LEFT INFORMATION PANEL
+   ========================================================= */
+
+.quote-information {
+  position: relative;
+
+  padding: 50px;
+
+  background: #061950;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* subtle circle */
+
+.quote-information::before {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  right: -190px;
+  bottom: -190px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(204, 216, 255, 0.08);
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.quote-brand-box {
+  position: relative;
+
+  z-index: 2;
+
+  width: 360px;
+  max-width: 100%;
+
+  min-height: 180px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 70px;
+
+}
+
+
+.quote-brand-box img {
+  display: block;
+
+  width: 300px;
+  max-width: 82%;
+
+  height: auto;
+}
+
+
+/* =========================================================
+   INFORMATION LABEL
+   ========================================================= */
+
+.quote-info-label {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 28px;
+
+  color: #4f83e8;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.quote-info-label span {
+  width: 36px;
+  height: 1px;
+
+  background: #4f83e8;
+}
+
+
+/* =========================================================
+   INFORMATION HEADING
+   ========================================================= */
+
+.quote-information h2 {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 600px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(37px, 4vw, 54px);
+
+  line-height: 1.03;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+
+/* =========================================================
+   INFORMATION DESCRIPTION
+   ========================================================= */
+
+.quote-info-description {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 580px;
+
+  margin: 27px 0 42px;
+
+  color: #ccd8ff;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   BENEFITS
+   ========================================================= */
+
+.quote-benefits {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+.quote-benefit {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+.quote-benefit span {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #4f83e8;
+
+  font-size: 17px;
+}
+
+
+.quote-benefit p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   FORM CARD
+   ========================================================= */
+
+.quote-form-card {
+  padding: 50px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe5ef;
+
+  box-shadow: 0 15px 40px rgba(6, 25, 80, 0.04);
+}
+
+
+/* =========================================================
+   FORM HEADER
+   ========================================================= */
+
+.quote-form-heading {
+  padding-bottom: 25px;
+
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid #e2e7ef;
+}
+
+
+.quote-form-heading > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #061950;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.quote-form-heading h2 {
+  margin: 0;
+
+  color: #061950;
+
+  font-size: 32px;
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+
+.quote-form-heading p {
+  max-width: 540px;
+
+  margin: 10px 0 0;
+
+  color: #707b91;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FORM ROW
+   ========================================================= */
+
+.quote-form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   FORM FIELD
+   ========================================================= */
+
+.quote-field {
+  margin-bottom: 20px;
+}
+
+
+.quote-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #061950;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+
+.quote-field label span {
+  margin-left: 3px;
+
+  color: #061950;
+}
+
+
+.quote-field input,
+.quote-field select,
+.quote-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d7dfec;
+
+  border-radius: 0;
+
+  outline: none;
+
+  background: #fbfcff;
+
+  color: #061950;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.quote-field input,
+.quote-field select {
+  height: 48px;
+
+  padding: 0 14px;
+}
+
+
+.quote-field textarea {
+  min-height: 130px;
+
+  padding: 13px 14px;
+
+  resize: vertical;
+
+  line-height: 1.6;
+}
+
+
+.quote-field input::placeholder,
+.quote-field textarea::placeholder {
+  color: #9da7b7;
+}
+
+
+.quote-field select {
+  cursor: pointer;
+}
+
+
+.quote-field input:focus,
+.quote-field select:focus,
+.quote-field textarea:focus {
+  border-color: #061950;
+
+  box-shadow:
+    0 0 0 2px rgba(21, 189, 208, 0.08);
+}
+
+
+/* =========================================================
+   SUCCESS
+   ========================================================= */
+
+.quote-success {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  margin: 5px 0 20px;
+
+  padding: 14px 16px;
+
+  border-left: 3px solid #061950;
+
+  background: #eefcfb;
+
+  color: #145c60;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+.quote-success strong {
+  color: #061950;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.quote-error {
+  margin: 5px 0 20px;
+
+  padding: 14px 16px;
+
+  border-left: 3px solid #c84755;
+
+  background: #fff5f6;
+
+  color: #a52d3a;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+.quote-submit {
+  min-width: 200px;
+
+  height: 52px;
+
+  padding: 0 24px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  border: none;
+
+  border-radius: 0;
+
+  background: #061950;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.quote-submit span {
+  font-size: 19px;
+
+  transition: transform 0.2s ease;
+}
+
+
+.quote-submit:hover {
+  background: #061950;
+
+  transform: translateY(-2px);
+}
+
+
+.quote-submit:hover span {
+  transform: translateX(4px);
+}
+
+
+.quote-submit:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .quote-hero-content {
+    width: min(100% - 60px, 1000px);
+
+    column-gap: 50px;
+  }
+
+
+  .quote-container {
+    width: min(100% - 60px, 1000px);
+
+    gap: 50px;
+  }
+
+
+  .quote-information {
+    padding: 40px;
+  }
+
+
+  .quote-form-card {
+    padding: 40px;
+  }
+
+
+  .quote-brand-box {
+    width: 100%;
+
+    min-height: 150px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .quote-hero {
+    min-height: 510px;
+  }
+
+
+  .quote-hero-content {
+    grid-template-columns: 1fr;
+
+    row-gap: 35px;
+  }
+
+
+  .quote-hero-right {
+    padding-top: 0;
+  }
+
+
+  .quote-hero-right p {
+    max-width: 650px;
+  }
+
+
+  .quote-section {
+    padding: 70px 0 80px;
+  }
+
+
+  .quote-container {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+
+  .quote-information {
+    min-height: auto;
+  }
+
+
+  .quote-brand-box {
+    width: 350px;
+  }
+
+
+  .quote-form-card {
+    max-width: none;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  /* -------------------------------------------------------
+     HERO
+     ------------------------------------------------------- */
+
+  .quote-hero {
+    min-height: 500px;
+
+    margin-top: 88px;
+  }
+
+
+  .quote-hero-content {
+    width: calc(100% - 40px);
+
+    display: block;
+  }
+
+
+  .quote-hero-label {
+    margin-bottom: 30px;
+
+    gap: 11px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .quote-hero-label span {
+    width: 27px;
+  }
+
+
+  .quote-hero-left h1 {
+    font-size: clamp(48px, 13vw, 63px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+  }
+
+
+  .quote-hero-left h1::after {
+    width: 48px;
+
+    height: 3px;
+
+    margin-top: 24px;
+  }
+
+
+  .quote-hero-right {
+    padding-top: 35px;
+  }
+
+
+  .quote-hero-right p {
+    font-size: 14px;
+
+    line-height: 1.8;
+  }
+
+
+  /* -------------------------------------------------------
+     SECTION
+     ------------------------------------------------------- */
+
+  .quote-section {
+    padding: 30px 0 60px;
+  }
+
+
+  .quote-container {
+    width: calc(100% - 30px);
+
+    gap: 25px;
+  }
+
+
+  /* -------------------------------------------------------
+     INFORMATION
+     ------------------------------------------------------- */
+
+  .quote-information {
+    padding: 30px 25px;
+  }
+
+
+  .quote-brand-box {
+    width: 100%;
+
+    min-height: 135px;
+
+    margin-bottom: 40px;
+  }
+
+
+  .quote-brand-box img {
+    width: 250px;
+  }
+
+
+  .quote-info-label {
+    margin-bottom: 20px;
+
+    font-size: 9px;
+
+    letter-spacing: 1.6px;
+  }
+
+
+  .quote-info-label span {
+    width: 25px;
+  }
+
+
+  .quote-information h2 {
+    font-size: 35px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.2px;
+  }
+
+
+  .quote-info-description {
+    margin: 20px 0 30px;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+  }
+
+
+  .quote-benefits {
+    gap: 15px;
+  }
+
+
+  .quote-benefit p {
+    font-size: 13px;
+  }
+
+
+  /* -------------------------------------------------------
+     FORM
+     ------------------------------------------------------- */
+
+  .quote-form-card {
+    padding: 28px 20px;
+  }
+
+
+  .quote-form-heading {
+    padding-bottom: 20px;
+
+    margin-bottom: 23px;
+  }
+
+
+  .quote-form-heading > span {
+    font-size: 9px;
+
+    letter-spacing: 1.7px;
+  }
+
+
+  .quote-form-heading h2 {
+    font-size: 27px;
+  }
+
+
+  .quote-form-heading p {
+    font-size: 12px;
+  }
+
+
+  .quote-form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+
+  .quote-field {
+    margin-bottom: 17px;
+  }
+
+
+  .quote-field label {
+    font-size: 11px;
+  }
+
+
+  .quote-field input,
+  .quote-field select {
+    height: 45px;
+
+    padding: 0 12px;
+
+    font-size: 12px;
+  }
+
+
+  .quote-field textarea {
+    min-height: 110px;
+
+    padding: 11px 12px;
+
+    font-size: 12px;
+  }
+
+
+  .quote-submit {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 49px;
+
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+  .quote-hero {
+    min-height: 470px;
+  }
+
+
+  .quote-hero-left h1 {
+    font-size: 44px;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .quote-information {
+    padding: 25px 18px;
+  }
+
+
+  .quote-brand-box {
+    min-height: 115px;
+  }
+
+
+  .quote-brand-box img {
+    width: 220px;
+  }
+
+
+  .quote-information h2 {
+    font-size: 31px;
+  }
+
+
+  .quote-form-card {
+    padding: 24px 16px;
+  }
+
+
+  .quote-form-heading h2 {
+    font-size: 24px;
+  }
+
+}

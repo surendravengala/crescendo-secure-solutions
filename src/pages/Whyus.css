@@ -1,0 +1,1082 @@
+/* =========================================================
+   WHY US PAGE
+   CRESCENDO SECURE SOLUTIONS
+========================================================= */
+
+.why-page {
+  width: 100%;
+  min-height: 100vh;
+
+  /*
+   * Header is fixed at 82px on desktop.
+   * This prevents the hero from going underneath it.
+   */
+  padding-top: 82px;
+
+  overflow-x: hidden;
+
+  background: #f5f7ff;
+  color: #061950;
+}
+
+
+/* =========================================================
+   SECTION 01 — HERO
+========================================================= */
+
+.why-hero {
+  width: 100%;
+
+  /*
+   * Enough height for the complete heading,
+   * description and eyebrow.
+   */
+  min-height: 600px;
+
+  display: flex;
+  align-items: stretch;
+
+  background: #061950;
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+.why-hero-container {
+  width: 100%;
+  max-width: 1650px;
+
+  margin: 0 auto;
+
+  padding: 55px 54px 65px;
+
+  display: flex;
+  flex-direction: column;
+
+  /*
+   * IMPORTANT:
+   * Do not allow the content to become smaller
+   * than its actual content height.
+   */
+  min-height: 600px;
+}
+
+
+/* =========================================================
+   HERO EYEBROW
+========================================================= */
+
+.why-hero-eyebrow {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  flex-shrink: 0;
+
+  color: #ccd8ff;
+
+  font-family: "Space Mono", monospace;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+
+
+.why-hero-eyebrow span:first-child {
+  width: 36px;
+  height: 2px;
+
+  flex: 0 0 auto;
+
+  background: #ccd8ff;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.why-hero-grid {
+  width: 100%;
+
+  /*
+   * We intentionally do NOT use flex: 1 here.
+   * This prevents the heading from being pushed
+   * into an unsafe position.
+   */
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(300px, 0.85fr);
+
+  align-items: end;
+
+  gap: 80px;
+
+  /*
+   * Controlled spacing below eyebrow.
+   */
+  margin-top: 80px;
+
+  /*
+   * Allow content to determine its own height.
+   */
+  min-height: 0;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.why-hero-title {
+  width: 100%;
+
+  /*
+   * Prevent flex/grid shrinking.
+   */
+  min-width: 0;
+}
+
+
+.why-hero-title h1 {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  /*
+   * Slightly smaller than before.
+   * This guarantees the full 3-line heading
+   * fits comfortably.
+   */
+  font-size: clamp(54px, 6vw, 88px);
+
+  font-weight: 800;
+
+  line-height: 0.96;
+
+  letter-spacing: -4px;
+
+  /*
+   * IMPORTANT:
+   * Never clip this heading.
+   */
+  overflow: visible;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.why-hero-description {
+  width: 100%;
+
+  max-width: 500px;
+
+  min-width: 0;
+
+  align-self: end;
+
+  padding-bottom: 8px;
+}
+
+
+.why-hero-description p {
+  margin: 0;
+
+  color: #ccd8ff;
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   SECTION 02 — STANDARDS
+========================================================= */
+
+.why-standards {
+  width: 100%;
+
+  padding: 65px 34px 75px;
+
+  background: #f5f7ff;
+}
+
+
+.why-standards-container {
+  width: 100%;
+
+  max-width: 1650px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   STANDARDS GRID
+========================================================= */
+
+.standards-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  border-left: 1px solid #d5ddef;
+  border-top: 1px solid #d5ddef;
+}
+
+
+/* =========================================================
+   STANDARD ITEM
+========================================================= */
+
+.standard-item {
+  position: relative;
+
+  min-height: 205px;
+
+  padding: 32px 36px 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: transparent;
+
+  border-right: 1px solid #d5ddef;
+  border-bottom: 1px solid #d5ddef;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.standard-item:hover {
+  background: #ffffff;
+}
+
+
+/* Bottom hover line */
+
+.standard-item::after {
+  content: "";
+
+  position: absolute;
+
+  left: 36px;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #36549b;
+
+  transition: width 0.3s ease;
+}
+
+
+.standard-item:hover::after {
+  width: 45px;
+}
+
+
+/* =========================================================
+   STANDARD NUMBER
+========================================================= */
+
+.standard-number {
+  display: block;
+
+  margin-bottom: 28px;
+
+  color: #4266c5;
+
+  font-family: "Space Mono", monospace;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   STANDARD CONTENT
+========================================================= */
+
+.standard-content {
+  width: 100%;
+
+  max-width: 760px;
+
+  min-width: 0;
+}
+
+
+.standard-content h2 {
+  margin: 0 0 12px;
+
+  color: #061950;
+
+  font-size: 27px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.8px;
+}
+
+
+.standard-content p {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: #60708f;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   SECTION 03 — CTA
+========================================================= */
+
+.why-cta {
+  width: 100%;
+
+  background: #061950;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+.why-cta-container {
+  width: 100%;
+
+  max-width: 1650px;
+
+  min-height: 560px;
+
+  margin: 0 auto;
+
+  padding: 65px 54px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.2fr)
+    minmax(300px, 0.8fr);
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+
+/* =========================================================
+   CTA CONTENT
+========================================================= */
+
+.why-cta-content {
+  width: 100%;
+
+  max-width: 850px;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   CTA EYEBROW
+========================================================= */
+
+.why-cta-eyebrow {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 28px;
+
+  color: #4266c5;
+
+  font-family: "Space Mono", monospace;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+
+
+.why-cta-eyebrow span:first-child {
+  width: 36px;
+  height: 2px;
+
+  flex: 0 0 auto;
+
+  background: #4266c5;
+}
+
+
+/* =========================================================
+   CTA TITLE
+========================================================= */
+
+.why-cta-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(50px, 5.7vw, 82px);
+
+  font-weight: 800;
+
+  line-height: 0.94;
+
+  letter-spacing: -4px;
+}
+
+
+.why-cta-content p {
+  max-width: 650px;
+
+  margin: 30px 0 0;
+
+  color: #ccd8ff;
+
+  font-size: 16px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   CTA BUTTONS
+========================================================= */
+
+.why-cta-actions {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 15px;
+}
+
+
+.why-cta-primary,
+.why-cta-secondary {
+  min-height: 58px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 24px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.why-cta-primary {
+  min-width: 225px;
+
+  gap: 20px;
+
+  background: #ffffff;
+
+  color: #061950;
+
+  border: 1px solid #ffffff;
+}
+
+
+.why-cta-primary:hover {
+  background: #ccd8ff;
+
+  border-color: #ccd8ff;
+
+  transform: translateY(-3px);
+}
+
+
+.why-cta-primary span:last-child {
+  font-size: 20px;
+
+  transition: transform 0.25s ease;
+}
+
+
+.why-cta-primary:hover span:last-child {
+  transform: translateX(5px);
+}
+
+
+.why-cta-secondary {
+  min-width: 150px;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(204, 216, 255, 0.55);
+
+  background: transparent;
+}
+
+
+.why-cta-secondary:hover {
+  background: #ffffff;
+
+  color: #061950;
+
+  border-color: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .why-page {
+    padding-top: 82px;
+  }
+
+
+  .why-hero {
+    min-height: 560px;
+  }
+
+
+  .why-hero-container {
+    min-height: 560px;
+
+    padding: 50px 40px 55px;
+  }
+
+
+  .why-hero-grid {
+    gap: 55px;
+
+    margin-top: 65px;
+  }
+
+
+  .why-hero-title h1 {
+    font-size: clamp(52px, 6.5vw, 78px);
+
+    letter-spacing: -3.5px;
+  }
+
+
+  .why-hero-description {
+    max-width: 420px;
+  }
+
+
+  .why-hero-description p {
+    font-size: 15px;
+  }
+
+
+  .why-standards {
+    padding: 55px 25px 65px;
+  }
+
+
+  .standard-item {
+    min-height: 190px;
+
+    padding: 28px 30px 30px;
+  }
+
+
+  .standard-item::after {
+    left: 30px;
+  }
+
+
+  .standard-content h2 {
+    font-size: 24px;
+  }
+
+
+  .standard-content p {
+    font-size: 14px;
+  }
+
+
+  .why-cta-container {
+    min-height: 520px;
+
+    padding: 60px 40px;
+
+    gap: 50px;
+  }
+
+
+  .why-cta-content h2 {
+    font-size: clamp(48px, 6vw, 74px);
+
+    letter-spacing: -3.5px;
+  }
+
+
+  .why-cta-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+
+  .why-cta-primary,
+  .why-cta-secondary {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  /*
+   * Header becomes 74px.
+   */
+  .why-page {
+    padding-top: 74px;
+  }
+
+
+  .why-hero {
+    min-height: auto;
+  }
+
+
+  .why-hero-container {
+    min-height: auto;
+
+    padding: 48px 30px 55px;
+  }
+
+
+  .why-hero-grid {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+
+    margin-top: 55px;
+  }
+
+
+  .why-hero-title h1 {
+    max-width: 800px;
+
+    font-size: clamp(52px, 9vw, 76px);
+
+    line-height: 0.95;
+
+    letter-spacing: -3.5px;
+  }
+
+
+  .why-hero-description {
+    max-width: 560px;
+
+    padding-bottom: 0;
+  }
+
+
+  .why-hero-description p {
+    font-size: 15px;
+
+    line-height: 1.6;
+  }
+
+
+  .why-standards {
+    padding: 50px 20px 60px;
+  }
+
+
+  .standard-item {
+    min-height: 185px;
+
+    padding: 27px;
+  }
+
+
+  .standard-item::after {
+    left: 27px;
+  }
+
+
+  .standard-number {
+    margin-bottom: 21px;
+  }
+
+
+  .standard-content h2 {
+    font-size: 23px;
+  }
+
+
+  .standard-content p {
+    font-size: 14px;
+  }
+
+
+  .why-cta-container {
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+
+    padding: 60px 30px 65px;
+
+    gap: 38px;
+  }
+
+
+  .why-cta-actions {
+    width: 100%;
+
+    justify-content: flex-start;
+
+    flex-direction: row;
+  }
+
+
+  .why-cta-primary,
+  .why-cta-secondary {
+    width: auto;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  /*
+   * Mobile header = 74px.
+   */
+  .why-page {
+    padding-top: 74px;
+  }
+
+
+  /* HERO */
+
+  .why-hero-container {
+    padding: 40px 20px 48px;
+  }
+
+
+  .why-hero-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  .why-hero-eyebrow span:first-child {
+    width: 27px;
+  }
+
+
+  .why-hero-grid {
+    display: block;
+
+    margin-top: 40px;
+  }
+
+
+  .why-hero-title h1 {
+    width: 100%;
+
+    max-width: 100%;
+
+    /*
+     * Smaller mobile size guarantees that
+     * "Readiness is a system, not a slogan."
+     * stays completely visible.
+     */
+    font-size: clamp(43px, 11.5vw, 60px);
+
+    line-height: 0.96;
+
+    letter-spacing: -2.5px;
+  }
+
+
+  .why-hero-description {
+    margin-top: 30px;
+
+    max-width: 100%;
+  }
+
+
+  .why-hero-description p {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+
+  /* STANDARDS */
+
+  .why-standards {
+    padding: 42px 14px 50px;
+  }
+
+
+  .standards-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .standard-item {
+    min-height: auto;
+
+    padding: 24px 21px 27px;
+  }
+
+
+  .standard-number {
+    margin-bottom: 16px;
+
+    font-size: 10px;
+  }
+
+
+  .standard-content h2 {
+    margin-bottom: 8px;
+
+    font-size: 20px;
+
+    line-height: 1.2;
+  }
+
+
+  .standard-content p {
+    font-size: 13px;
+
+    line-height: 1.55;
+  }
+
+
+  .standard-item::after {
+    left: 21px;
+  }
+
+
+  /* CTA */
+
+  .why-cta-container {
+    padding: 50px 20px 55px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 32px;
+  }
+
+
+  .why-cta-eyebrow {
+    margin-bottom: 24px;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  .why-cta-eyebrow span:first-child {
+    width: 27px;
+  }
+
+
+  .why-cta-content h2 {
+    font-size: clamp(42px, 11vw, 58px);
+
+    line-height: 0.96;
+
+    letter-spacing: -2.8px;
+  }
+
+
+  .why-cta-content p {
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+
+  .why-cta-actions {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 10px;
+  }
+
+
+  .why-cta-primary,
+  .why-cta-secondary {
+    width: 100%;
+
+    min-height: 52px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .why-page {
+    padding-top: 70px;
+  }
+
+
+  .why-hero-container {
+    padding: 34px 17px 42px;
+  }
+
+
+  .why-hero-grid {
+    margin-top: 34px;
+  }
+
+
+  .why-hero-title h1 {
+    font-size: 40px;
+
+    line-height: 0.97;
+
+    letter-spacing: -2px;
+  }
+
+
+  .why-hero-description {
+    margin-top: 25px;
+  }
+
+
+  .why-hero-description p {
+    font-size: 13px;
+  }
+
+
+  .why-standards {
+    padding: 38px 10px 44px;
+  }
+
+
+  .standard-item {
+    padding: 21px 17px 23px;
+  }
+
+
+  .standard-number {
+    margin-bottom: 14px;
+  }
+
+
+  .standard-content h2 {
+    font-size: 18px;
+  }
+
+
+  .standard-content p {
+    font-size: 12px;
+  }
+
+
+  .standard-item::after {
+    left: 17px;
+  }
+
+
+  .why-cta-container {
+    padding: 43px 17px 48px;
+  }
+
+
+  .why-cta-content h2 {
+    font-size: 40px;
+
+    letter-spacing: -2px;
+  }
+
+
+  .why-cta-content p {
+    font-size: 13px;
+  }
+}
