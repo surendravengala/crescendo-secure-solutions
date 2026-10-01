@@ -14,20 +14,21 @@ import { FaWhatsapp } from 'react-icons/fa'
   Example:
   public/assets/services/armed-security.jpg
 */
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`
 
 const serviceImages = [
-  '/assets/services/armed.png',
-  '/assets/services/unarmed.png',
-  '/assets/services/hospital.png',
-  '/assets/services/industry.png',
-  '/assets/services/hotel.png',
-  '/assets/services/MNC SG.png',
-  '/assets/services/college.png',
-  '/assets/services/real estate SG.png',
-  '/assets/services/Bouncer SG1.png',
-  '/assets/services/Escort Security SG1.png',
-  '/assets/services/Mall Security SG.png',
-  '/assets/services/Event SG.png',
+  asset('assets/services/armed.png'),
+  asset('assets/services/unarmed.png'),
+  asset('assets/services/hospital.png'),
+  asset('assets/services/industry.png'),
+  asset('assets/services/hotel.png'),
+  asset('assets/services/MNC SG.png'),
+  asset('assets/services/college.png'),
+  asset('assets/services/real estate SG.png'),
+  asset('assets/services/Bouncer SG1.png'),
+  asset('assets/services/Escort Security SG1.png'),
+  asset('assets/services/Mall Security SG.png'),
+  asset('assets/services/Event SG.png'),
 ]
 
 export default function Services() {

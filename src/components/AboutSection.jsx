@@ -12,7 +12,8 @@ export default function AboutSection() {
 
           <div className="about-image">
             <img
-              src="/assets/images.jpg"
+              src={`${import.meta.env.BASE_URL}assets/images.jpg`}
+
               alt="Modern security technology"
             />
           </div>

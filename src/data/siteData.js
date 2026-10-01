@@ -205,67 +205,59 @@ export const processSteps = [
   },
 ]
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`
 
 export const companyGallery = [
   {
-    image: '/assets/scroll/1.jpeg',
+    image: asset('assets/scroll/1.jpeg'),
     title: 'Security Operations',
     description: 'Professional security personnel protecting people and property.',
   },
-
   {
-    image: '/assets/scroll/2.jpeg',
+    image: asset('assets/scroll/2.jpeg'),
     title: 'Security Training',
     description: 'Continuous training to maintain professional security standards.',
   },
-
   {
-    image: '/assets/scroll/3.jpeg',
+    image: asset('assets/scroll/3.jpeg'),
     title: 'Team Meetings',
     description: 'Planning, coordination, and operational reviews.',
   },
-
   {
-    image: '/assets/scroll/4.jpeg',
+    image: asset('assets/scroll/4.jpeg'),
     title: 'Site Visits',
     description: 'On-site assessment, supervision, and operational support.',
   },
-
   {
-    image: '/assets/scroll/5.jpeg',
-    title: 'Our Team',
-    description: 'Trained professionals working together to deliver reliable service.',
-  },
-  {
-    image: '/assets/scroll/1.jpeg',
-    title: 'Security Operations',
-    description: 'Professional security personnel protecting people and property.',
-  },
-
-  {
-    image: '/assets/scroll/2.jpeg',
-    title: 'Security Training',
-    description: 'Continuous training to maintain professional security standards.',
-  },
-
-  {
-    image: '/assets/scroll/3.jpeg',
-    title: 'Team Meetings',
-    description: 'Planning, coordination, and operational reviews.',
-  },
-
-  {
-    image: '/assets/scroll/4.jpeg',
-    title: 'Site Visits',
-    description: 'On-site assessment, supervision, and operational support.',
-  },
-
-  {
-    image: '/assets/scroll/5.jpeg',
+    image: asset('assets/scroll/5.jpeg'),
     title: 'Our Team',
     description: 'Trained professionals working together to deliver reliable service.',
   },
 
-  
-  
+  // Duplicate set for continuous gallery animation
+  {
+    image: asset('assets/scroll/1.jpeg'),
+    title: 'Security Operations',
+    description: 'Professional security personnel protecting people and property.',
+  },
+  {
+    image: asset('assets/scroll/2.jpeg'),
+    title: 'Security Training',
+    description: 'Continuous training to maintain professional security standards.',
+  },
+  {
+    image: asset('assets/scroll/3.jpeg'),
+    title: 'Team Meetings',
+    description: 'Planning, coordination, and operational reviews.',
+  },
+  {
+    image: asset('assets/scroll/4.jpeg'),
+    title: 'Site Visits',
+    description: 'On-site assessment, supervision, and operational support.',
+  },
+  {
+    image: asset('assets/scroll/5.jpeg'),
+    title: 'Our Team',
+    description: 'Trained professionals working together to deliver reliable service.',
+  },
 ]

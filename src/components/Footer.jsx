@@ -23,7 +23,8 @@ export default function Footer() {
             >
               <img
                 className="footer-logo"
-                src="/assets/logo.png"
+                src={`${import.meta.env.BASE_URL}assets/logo.png`}
+
                 alt="Crescendo Secure Solutions"
               />
             </a>

@@ -121,7 +121,7 @@ export default function Header() {
         >
           <img
             className="logo"
-            src="/assets/logo.png"
+  src={`${import.meta.env.BASE_URL}assets/logo.png`}
             alt="Crescendo Secure Solutions"
           />
         </Link>

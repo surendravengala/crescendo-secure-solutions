@@ -2,42 +2,47 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import './About.css'
 import { FaWhatsapp } from 'react-icons/fa'
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`
 
 const team = [
   {
     number: '01',
     name: 'Founder Name',
     designation: 'Founder',
-    image: '/assets/team/f.png',
+    image: asset('assets/team/f.png'),
     message:
       'Our goal is to build a security organization that clients can trust. Strong security begins with strong operations, disciplined execution, trained personnel, and consistent service delivery.',
   },
+
   {
     number: '02',
     name: 'General Manager Name',
     designation: 'General Manager',
-    image: '/assets/team/gm.PNG',
+    image: asset('assets/team/gm.PNG'),
     message:
       'Reliable security comes from people, processes, and continuous supervision. We focus on maintaining clear procedures and dependable service across every operation.',
   },
+
   {
     number: '03',
     name: 'HR / Accounts Manager Name',
     designation: 'HR & Accounts Manager',
-    image: '/assets/team/hr.PNG',
+    image: asset('assets/team/hr.PNG'),
     message:
       'Our people are at the heart of our organization. We believe in supporting our team, maintaining professional standards, and building a culture of accountability and respect.',
   },
+
   {
     number: '04',
     name: 'Manager Name',
     designation: 'Manager — Administration',
-    image: '/assets/team/m.jpeg',
+    image: asset('assets/team/m.jpeg'),
     message:
       'Effective administration keeps operations moving smoothly. Our focus is coordination, responsiveness, and ensuring that every team has the support required to deliver reliable service.',
   },
 ]
 
+export { team }
 const values = [
   {
     number: '01',
